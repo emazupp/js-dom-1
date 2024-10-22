@@ -4,13 +4,11 @@ const buttonLamp = document.getElementById("switch-button");
 buttonLamp.addEventListener("click", () => {
   if (lampImg.classList.contains("off")) {
     lampImg.src = "./img/yellow_lamp.png";
-    lampImg.classList.add("on");
-    lampImg.classList.remove("off");
+    lampImg.classList.toggle("off");
     buttonLamp.innerHTML = "Spegni";
-  } else if (lampImg.classList.contains("on")) {
+  } else {
     lampImg.src = "./img/white_lamp.png";
-    lampImg.classList.remove("on");
-    lampImg.classList.add("off");
+    lampImg.classList.toggle("off");
     buttonLamp.innerHTML = "Accendi";
   }
 });
