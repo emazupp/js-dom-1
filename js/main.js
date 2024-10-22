@@ -2,7 +2,7 @@ const lampImg = document.getElementById("img-lamp");
 const buttonLamp = document.getElementById("switch-button");
 
 // ! first method
-buttonLamp.addEventListener("click", () => {
+/* buttonLamp.addEventListener("click", () => {
   if (lampImg.classList.contains("off")) {
     lampImg.src = "./img/yellow_lamp.png";
     lampImg.classList.toggle("off");
@@ -12,7 +12,7 @@ buttonLamp.addEventListener("click", () => {
     lampImg.classList.toggle("off");
     buttonLamp.innerHTML = "Accendi";
   }
-});
+}); */
 
 // ! second method
 buttonLamp.addEventListener("click", () => {
