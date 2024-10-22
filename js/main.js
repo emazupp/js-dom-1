@@ -17,13 +17,11 @@ buttonLamp.addEventListener("click", () => {
 // ! second method
 buttonLamp.addEventListener("click", () => {
   const currentPath = lampImg.src;
-  const onPath = "./img/white_lamp.png";
-  const offPath = "./img/yellow_lamp.png";
   if (currentPath.includes("white")) {
-    lampImg.src = offPath;
+    lampImg.src = "./img/yellow_lamp.png";
     buttonLamp.innerHTML = "Spegni";
   } else {
-    lampImg.src = onPath;
+    lampImg.src = "./img/white_lamp.png";
     buttonLamp.innerHTML = "Accendi";
   }
 });
